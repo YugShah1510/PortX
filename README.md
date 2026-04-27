@@ -1,1 +1,3 @@
 # PortX
+
+Stunning Personal Portfolio Website, that has a stellar UI using modern webdev technologies like React.js and Tailwind CSS.This portfolio will include a beautiful responsive navbar, a cool background that makes you feel like you are in space , and about me section to promote yourself,a dynamic skills section that will list out all of your technical abilities , a place to demonstrate all of your impressive projects and a get in touch area to be able to hear new oppurtunities.
