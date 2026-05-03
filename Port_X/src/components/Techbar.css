@@ -1,0 +1,36 @@
+.tech-wrapper {
+  overflow: hidden;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  background: #000;
+  padding: 12px 0;
+}
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.tech-content {
+  display: flex;
+  gap: 40px;
+  padding-right: 40px;
+  white-space: nowrap;
+}
+
+.tech-content span {
+  color: #9ca3af;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* 🔥 Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
