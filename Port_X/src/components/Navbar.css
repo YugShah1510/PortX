@@ -20,8 +20,12 @@
   text-decoration: none;
   color: #9ca3af;
   font-size: 15px;
+  cursor: pointer;
 }
 
+a:hover{
+  color: whitesmoke;
+}
 .preview-btn {
   background: linear-gradient(to right, #7c3aed, #ec4899);
   border: none;
@@ -33,7 +37,7 @@
 }
 
 .logo-img {
-  height: 120px;
+  height: 45px;
   width: auto;
-}
+};
 

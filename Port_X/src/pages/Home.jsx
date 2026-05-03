@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import TechBar from "../components/TechBar";
+import TechBar from "../components/Techbar";
+import Features from "../components/Features";
 
 const Home = () => {
   return (
@@ -8,6 +9,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       <TechBar /> 
+      <Features/>
+      
     </div>
   );
 };

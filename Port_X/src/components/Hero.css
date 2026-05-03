@@ -47,32 +47,53 @@
   line-height: 1.6;
 }
 
-/* Buttons */
 .buttons {
   margin-top: 40px;
   display: flex;
   gap: 20px;
+  position: relative;
+  overflow: hidden;
 }
+.buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 
-.primary-btn {
+  width: 215px; /* 🔥 match your button width manually */
+  height: 100%;
+
   background: linear-gradient(to right, #7c3aed, #ec4899);
-  border: none;
-  padding: 24px 36px;
   border-radius: 10px;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
+
+  transition: transform 0.5s ease;
+  z-index: 0;
 }
 
+
+.buttons:hover::before {
+  transform: translateX(calc(100% + 10px));
+}
+
+
+.primary-btn,
 .secondary-btn {
+  position: relative;
+  z-index: 1;
+
   background: transparent;
   border: 1px solid #444;
+
   padding: 24px 36px;
   border-radius: 10px;
   color: white;
   font-size: 15px;
   cursor: pointer;
 }
+.buttons::before {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+}
+
 
 /* Features */
 .features {
