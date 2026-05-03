@@ -1,3 +1,27 @@
-# PortX
+🚀 PortX – Portfolio Marketplace
 
-Stunning Personal Portfolio Website, that has a stellar UI using modern webdev technologies like React.js and Tailwind CSS.This portfolio will include a beautiful responsive navbar, a cool background that makes you feel like you are in space , and about me section to promote yourself,a dynamic skills section that will list out all of your technical abilities , a place to demonstrate all of your impressive projects and a get in touch area to be able to hear new oppurtunities.
+PortX is a modern web platform where users can browse, preview, and purchase premium developer portfolio templates tailored for jobs and internships.
+
+Built with a focus on clean UI, speed, and real-world usability, PortX helps users stand out without spending weeks building a portfolio from scratch.
+
+✨ Features
+🎨 Premium, modern portfolio templates
+⚡ Live preview before download
+📦 Instant ZIP download (no signup required)
+💻 Production-ready code (clean & readable)
+🔥 Designed for students, developers, and job seekers
+🧠 Problem We Solve
+
+Building a portfolio from scratch is:
+
+Time-consuming
+Design-heavy
+Often not optimized for recruiters
+
+PortX provides ready-to-use, high-quality templates so users can focus on content, not design.
+
+🛠 Tech Stack
+⚛️ React (Frontend)
+⚡ Vite (Build tool)
+🎨 CSS (Custom styling)
+📦 Modular Component Architecture
