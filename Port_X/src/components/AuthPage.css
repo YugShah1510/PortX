@@ -98,7 +98,7 @@ h1 {
 /* INPUT BOX */
 .input-box {
   position: relative;
-  width: 100%;
+  width: 87.5%;
   margin-bottom: 12px;
 }
 
@@ -117,7 +117,7 @@ h1 {
 
 .input-box input:focus {
   outline: none;
-  border-color: #6366f1;
+  border-color: #ec4899;
   background: #0d0d0d;
 }
 
@@ -139,7 +139,7 @@ h1 {
   border-radius: 10px;
   border: none;
 
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  background: linear-gradient(to right, #7c3aed, #ec4899);
   color: white;
 
   font-size: 15px;
@@ -159,12 +159,13 @@ h1 {
   text-align: center;
   margin-top: 16px;
   font-size: 13px;
-  color: #6b7280;
+  
 }
 
 .switch span {
   color: #818cf8;
   cursor: pointer;
+  color:#ec4899;
 }
 
 .switch span:hover {
