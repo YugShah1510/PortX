@@ -18,8 +18,8 @@ const Hero = () => {
       </p>
 
       <div className="buttons">
-        <button className="primary-btn">Browse Templates →</button>
-        <button className="secondary-btn">▶ Try Live Preview</button>
+        <button className="hero-primary-btn">Browse Templates →</button>
+        <button className="hero-secondary-btn">▶ Try Live Preview</button>
       </div>
 
       <div className="features">
