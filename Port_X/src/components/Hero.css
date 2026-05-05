@@ -52,7 +52,6 @@
   display: flex;
   gap: 20px;
   position: relative;
-  overflow: hidden;
 }
 .buttons::before {
   content: "";
@@ -73,11 +72,14 @@
 
 .buttons:hover::before {
   transform: translateX(calc(100% + 10px));
+
+  width: 212.4px;
+  height: 100%;
 }
 
 
-.primary-btn,
-.secondary-btn {
+.hero-primary-btn,
+.hero-secondary-btn {
   position: relative;
   z-index: 1;
 
