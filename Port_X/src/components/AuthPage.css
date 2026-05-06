@@ -1,17 +1,46 @@
+
+/* BACKGROUND */
+.auth-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* MATCH HOME PAGE GLOW EFFECT */
+.auth-page-container::after {
+  content: "";
+  position: absolute;
+  right: -200px;
+  top: 50px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.4), transparent 70%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
 .auth-wrapper {
   min-height: 100vh;
   padding-top: 90px;  /* 🔥 IMPORTANT */
 
+
+.auth-wrapper {
+  flex: 1;
   display: flex;
   justify-content: center;
+
+  align-items: center;
+
   align-items: flex-start;
 
-  font-family: "Inter", sans-serif;
 
-  background:
-    radial-gradient(1000px circle at 20% 10%, rgba(99, 102, 241, 0.25), transparent 60%),
-    radial-gradient(800px circle at 80% 90%, rgba(168, 85, 247, 0.15), transparent 60%),
-    #020617;
+  font-family: "Inter", sans-serif;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 /* CARD */
@@ -25,9 +54,10 @@
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
+  /* Added subtle purple shade */
   box-shadow:
-    0 25px 80px rgba(0, 0, 0, 0.9),
-    0 0 0 1px rgba(255, 255, 255, 0.02);
+    0 0 60px rgba(168, 85, 247, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
 
   color: #f1f5f9;
 }
@@ -52,12 +82,14 @@ h1 {
   font-size: 24px;
   margin-bottom: 6px;
   color: #ffffff;
+  text-align: center;
 }
 
 .subtitle {
   font-size: 14px;
   color: #9ca3af;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 /* GITHUB BUTTON */
@@ -88,9 +120,26 @@ h1 {
 /* DIVIDER */
 .divider {
   margin: 20px 0;
+  display: flex;
+  align-items: center;
   text-align: center;
   font-size: 12px;
   color: #6b7280;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
 }
 
 /* INPUT BOX */
@@ -157,13 +206,13 @@ h1 {
   text-align: center;
   margin-top: 16px;
   font-size: 13px;
-  
+
 }
 
 .switch span {
   color: #818cf8;
   cursor: pointer;
-  color:#ec4899;
+  color: #ec4899;
 }
 
 .switch span:hover {

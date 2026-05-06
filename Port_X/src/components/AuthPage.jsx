@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AuthPage.css";
+import Navbar from "./Navbar";
 
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -11,7 +12,9 @@ export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="auth-wrapper">
+    <div className="auth-page-container">
+      <Navbar />
+      <div className="auth-wrapper">
       <div className="auth-box">
 
         {/* Logo */}
@@ -69,6 +72,7 @@ export default function AuthPage() {
         </p>
 
       </div>
+    </div>
     </div>
   );
 }

@@ -1,0 +1,396 @@
+/* src/components/Template.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #020202;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.app {
+    background: #020202;
+    min-height: 100vh;
+}
+
+/* HERO */
+
+.hero-section {
+    max-width: 1450px;
+    margin: auto;
+    padding: 130px 60px 70px;
+    position: relative;
+}
+
+.small-heading {
+    color: #5f6880;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero-section h1 {
+    font-size: 96px;
+    line-height: 0.95;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    max-width: 100%;
+    text-align: left;
+}
+
+.hero-section span {
+    color: #ec4899;
+    font-style: italic;
+}
+
+/* ========================================
+   GLOBAL HOVER-SHIFT EFFECT
+   All buttons below the header shift top-left
+   on hover, revealing a white box only in the
+   vacated area (bottom-right corner).
+   ======================================== */
+
+.download-btn:hover,
+.zip:hover,
+.preview:hover,
+.filters button:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 6px 6px 0px white;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn {
+    position: absolute;
+    right: 60px;
+    top: 180px;
+
+    padding: 22px 40px;
+    border: none;
+
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+    color: white;
+
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: 0.35s ease;
+}
+
+/* FILTER */
+
+.filter-section {
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 60px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: white;
+    padding: 14px 24px;
+    cursor: pointer;
+    transition: 0.35s ease;
+    border-radius: 8px;
+}
+
+.filters button:hover {
+    border-color: #ec4899;
+    color: #ec4899;
+}
+
+.filters .active {
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+    color: white;
+    border: none;
+}
+
+.filter-section input {
+    width: 340px;
+    padding: 16px 20px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: white;
+    outline: none;
+    border-radius: 8px;
+}
+
+.filter-section input:focus {
+    border-color: #ec4899;
+}
+
+/* CARDS */
+
+.cards-grid {
+    max-width: 1450px;
+    margin: auto;
+    padding: 20px 60px 100px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.4s ease;
+}
+
+.card:hover {
+    border-color: rgba(236, 72, 153, 0.45);
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* IMAGE EFFECT */
+
+.card-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+
+    filter: grayscale(100%);
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.card:hover .card-image img {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+.card-top {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+}
+
+.tags span {
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+}
+
+.card-content {
+    padding: 28px;
+}
+
+.title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-rating h2 {
+    font-size: 42px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+}
+
+.title-rating span {
+    color: #ec4899;
+}
+
+.card-content p {
+    margin-top: 18px;
+    color: #9f9f9f;
+    line-height: 1.9;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.preview,
+.zip {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.35s ease;
+    border-radius: 8px;
+}
+
+.preview:hover {
+    border-color: #ec4899;
+    color: #ec4899;
+}
+
+/* ZIP BUTTON */
+
+.zip {
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.card-content a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #5f6880;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.card-content a:hover {
+    color: #ec4899;
+}
+
+/* FOOTER */
+
+.footer {
+    max-width: 1450px;
+    margin: auto;
+    padding: 80px 60px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.footer-left {
+    max-width: 420px;
+}
+
+.footer-left p {
+    color: #9f9f9f;
+    line-height: 2;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-links h4 {
+    color: #5f6880;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ec4899;
+}
+
+.socials {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-section h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar,
+    .hero-section,
+    .filter-section,
+    .cards-grid,
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section h1 {
+        font-size: 52px;
+    }
+
+    .download-btn {
+        position: static;
+        margin-top: 40px;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filter-section input {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .preview-btn {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+}

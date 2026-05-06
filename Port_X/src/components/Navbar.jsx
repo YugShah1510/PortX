@@ -13,8 +13,13 @@ const Navbar = () => {
       </div>
 
       <div className="nav-links">
+
+        <Link to="/">Home</Link>
+        <Link to="/templates">Templates</Link>
+
         <Link to="/">Home</Link>           {/* ✅ FIXED */}
         <Link to="/templates">Templates</Link> {/* optional */}
+
         <Link to="/login">Log in</Link>
       </div>
 
