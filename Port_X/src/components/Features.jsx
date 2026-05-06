@@ -42,7 +42,7 @@ const features = [
 const Features = () => {
   return (
     <section className="features-section">
-      {/* 🔥 TOP SECTION */}
+
       <div className="features-top">
         <h2 className="features-heading">
           Six reasons this doesn’t feel like <br />
@@ -55,7 +55,7 @@ const Features = () => {
         </p>
       </div>
 
-      {/* 🔥 GRID */}
+
       <div className="features-grid">
         {features.map((item, index) => (
           <div className="feature-card" key={index}>
@@ -63,12 +63,12 @@ const Features = () => {
     {String(index + 1).padStart(2, "0")}
   </span>
 
-  {/* ✅ LOGO */}
+
   {item.logo && (
     <img src={item.logo} alt="logo" className="feature-logo" />
   )}
 
-  {/* ✅ TEXT */}
+
   <h3>{item.title}</h3>
   <p>{item.desc}</p>
 </div>

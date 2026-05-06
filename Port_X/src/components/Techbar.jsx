@@ -4,7 +4,7 @@ const TechBar = () => {
   return (
     <div className="tech-wrapper">
       <div className="tech-track">
-        {/* Repeat content twice for smooth infinite scroll */}
+
         <div className="tech-content">
           <span>◆ SVELTEKIT</span>
           <span>◆ REACT</span>

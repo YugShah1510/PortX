@@ -2,7 +2,7 @@
   padding: 120px 80px;
 }
 
-/* main box */
+
 .cta-box {
   border: 1px solid #1f1f1f;
   border-radius: 20px;
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* 🔥 gradient glow background */
+
 .cta-box::before {
   content: "";
   position: absolute;
@@ -23,34 +23,34 @@
   z-index: 0;
 }
 
-/* content above glow */
+
 .cta-box * {
   position: relative;
   z-index: 1;
 }
 
-/* heading */
+
 .cta-box h2 {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-/* gradient text */
+
 .gradient-text {
   background: linear-gradient(to right, #a78bfa, #ec4899);
   -webkit-background-clip: text;
   color: transparent;
 }
 
-/* paragraph */
+
 .cta-box p {
   color: #9ca3af;
   margin-bottom: 40px;
   font-size: 16px;
 }
 
-/* button */
+
 .cta-btn {
   background: linear-gradient(to right, #7c3aed, #ec4899);
   border: none;
@@ -62,7 +62,7 @@
   transition: 0.3s;
 }
 
-/* hover */
+
 .cta-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);

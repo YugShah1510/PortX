@@ -17,12 +17,12 @@ export default function AuthPage() {
       <div className="auth-wrapper">
       <div className="auth-box">
 
-        {/* Logo */}
+
         <div className="logo-row">
           <img src={logo} alt="PortX Logo" className="logo-img" />
         </div>
 
-        {/* Heading */}
+
         <h1>{isLogin ? "Welcome back" : "Create account"}</h1>
         <p className="subtitle">
           {isLogin
@@ -30,7 +30,7 @@ export default function AuthPage() {
             : "Create your account to get started."}
         </p>
 
-        {/* GitHub */}
+
         <button className="github-btn">
           <FaGithub className="icon" />
           {isLogin ? "Continue with GitHub" : "Sign up with GitHub"}
@@ -38,19 +38,19 @@ export default function AuthPage() {
 
         <div className="divider">OR</div>
 
-        {/* Email */}
+
         <div className="input-box">
           <HiOutlineMail className="input-icon" />
           <input type="email" placeholder="Email" />
         </div>
 
-        {/* Password */}
+
         <div className="input-box">
           <FiLock className="input-icon" />
           <input type="password" placeholder="Password" />
         </div>
 
-        {/* Confirm Password (Signup only) */}
+
         {!isLogin && (
           <div className="input-box">
             <FiLock className="input-icon" />
@@ -58,12 +58,12 @@ export default function AuthPage() {
           </div>
         )}
 
-        {/* Button */}
+
         <button className="primary-btn">
           {isLogin ? "Sign in" : "Create account"}
         </button>
 
-        {/* Switch */}
+
         <p className="switch">
           {isLogin ? "New to PortX?" : "Already have an account?"}{" "}
           <span onClick={() => setIsLogin(!isLogin)}>

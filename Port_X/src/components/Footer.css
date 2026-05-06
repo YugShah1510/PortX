@@ -10,7 +10,6 @@
   gap: 60px;
 }
 
-/* LEFT */
 .footer-left {
   max-width: 350px;
 }
@@ -38,7 +37,7 @@
   font-size: 14px;
 }
 
-/* CENTER */
+
 .footer-links {
   display: flex;
   flex-direction: column;
@@ -61,7 +60,7 @@
   color: #ec4899;
 }
 
-/* RIGHT */
+
 .footer-social {
   display: flex;
   flex-direction: column;

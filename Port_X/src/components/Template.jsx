@@ -72,7 +72,7 @@ const templates = [
 export default function Template() {
     return (
         <div className="app">
-            {/* HEADER */}
+
 
             <header className="header">
                 <div className="header-overlay"></div>
@@ -90,7 +90,7 @@ export default function Template() {
                 </div>
             </header>
 
-            {/* HERO */}
+
 
             <section className="hero-section">
                 <h1>The <span>library.</span><br />Handpicked. Obsessed over.</h1>
@@ -98,7 +98,7 @@ export default function Template() {
                 <button className="download-btn">Download All .ZIP</button>
             </section>
 
-            {/* FILTER */}
+
 
             <section className="filter-section">
                 <div className="filters">
@@ -112,7 +112,7 @@ export default function Template() {
                 <input type="text" placeholder="Search templates..." />
             </section>
 
-            {/* CARDS */}
+
 
             <section className="cards-grid">
                 {templates.map((item) => (
@@ -153,7 +153,7 @@ export default function Template() {
                 ))}
             </section>
 
-            {/* FOOTER */}
+
 
             <footer className="footer">
                 <div className="footer-left">
