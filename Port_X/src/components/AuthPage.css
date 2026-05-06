@@ -1,3 +1,4 @@
+
 /* BACKGROUND */
 .auth-page-container {
   min-height: 100vh;
@@ -22,10 +23,20 @@
 }
 
 .auth-wrapper {
+  min-height: 100vh;
+  padding-top: 90px;  /* 🔥 IMPORTANT */
+
+
+.auth-wrapper {
   flex: 1;
   display: flex;
   justify-content: center;
+
   align-items: center;
+
+  align-items: flex-start;
+
+
   font-family: "Inter", sans-serif;
   padding: 40px;
   position: relative;
