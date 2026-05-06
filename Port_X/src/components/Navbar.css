@@ -41,3 +41,13 @@ a:hover{
   width: auto;
 };
 
+
+
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* 🔥 IMPORTANT */
+  background: black; /* or your bg */
+}
