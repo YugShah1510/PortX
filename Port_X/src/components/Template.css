@@ -63,7 +63,7 @@ body {
     box-shadow: 6px 6px 0px white;
 }
 
-/* DOWNLOAD BUTTON */
+
 
 .download-btn {
     position: absolute;
@@ -83,7 +83,7 @@ body {
     transition: 0.35s ease;
 }
 
-/* FILTER */
+
 
 .filter-section {
     max-width: 1450px;
@@ -136,7 +136,7 @@ body {
     border-color: #ec4899;
 }
 
-/* CARDS */
+
 
 .cards-grid {
     max-width: 1450px;
@@ -165,7 +165,7 @@ body {
     overflow: hidden;
 }
 
-/* IMAGE EFFECT */
+
 
 .card-image img {
     width: 100%;
@@ -257,7 +257,7 @@ body {
     color: #ec4899;
 }
 
-/* ZIP BUTTON */
+
 
 .zip {
     background: linear-gradient(to right, #7c3aed, #ec4899);
@@ -279,7 +279,7 @@ body {
     color: #ec4899;
 }
 
-/* FOOTER */
+
 
 .footer {
     max-width: 1450px;

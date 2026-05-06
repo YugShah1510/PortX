@@ -4,7 +4,7 @@
   position: relative;
 }
 
-/* Badge */
+
 .badge {
   display: inline-block;
   background: #1a1a1a;
@@ -15,7 +15,7 @@
   margin-bottom: 30px;
 }
 
-/* Heading */
+
 .hero h1 {
   font-size: 92px;
   line-height: 1.1;
@@ -24,7 +24,7 @@
   text-align: left;
 }
 
-/* Gradient text */
+
 .gradient-text {
   background: linear-gradient(to right, #a78bfa, #ec4899);
   background-clip: text;
@@ -39,7 +39,7 @@
   color: transparent;
 }
 
-/* Paragraph */
+
 .hero p {
   color: #9ca3af;
   margin-top: 30px;
@@ -117,7 +117,7 @@
   font-weight: bold;
 }
 
-/* 🔥 RIGHT SIDE GLOW EFFECT */
+
 .hero::after {
   content: "";
   position: absolute;

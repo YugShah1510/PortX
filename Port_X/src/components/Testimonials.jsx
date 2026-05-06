@@ -12,7 +12,7 @@ const Testimonials = () => {
 
       <div className="cards">
 
-        {/* Card 1 */}
+
         <div className="card">
           <span className="quote">❝</span>
           <p>
@@ -28,7 +28,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Card 2 */}
+
         <div className="card">
           <span className="quote">❝</span>
           <p>
@@ -44,7 +44,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Card 3 */}
+
         <div className="card">
           <span className="quote">❝</span>
           <p>

@@ -7,21 +7,21 @@
 
 
 .features-heading {
-  margin: 0;   /* 🔥 removes default browser margin */
+  margin: 0;  
 }
 
-/* 🔥 TOP LAYOUT */
+
 .features-top {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 80px;
   margin-bottom: 120px;
-  /* align-items: start; */
+
 }
 
 
 
-/* LEFT HEADING */
+
 .features-heading {
   font-size: 52px;
   font-weight: 600;
@@ -33,7 +33,7 @@
   font-style: italic;
 }
 
-/* RIGHT TEXT */
+
 .features-subtext {
   color: #9ca3af;
   font-size: 18px;
@@ -41,14 +41,14 @@
   max-width: 360px;
 }
 
-/* 🔥 GRID */
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: 2px solid #111;
 }
 
-/* CARD */
+
 .feature-card {
   padding: 60px;
   min-height: 240px;
@@ -58,7 +58,7 @@
   transition: 0.3s ease;
 }
 
-/* NUMBER (top right) */
+
 .feature-number {
   position: absolute;
   top: 20px;
@@ -67,13 +67,13 @@
   color: #444;
 }
 
-/* TITLE */
+
 .feature-card h3 {
   font-size: 24px;
   margin-bottom: 12px;
 }
 
-/* DESCRIPTION */
+
 .feature-card p {
   font-size: 18px;
   color: #888;
@@ -81,7 +81,7 @@
   max-width: 300px;
 }
 
-/* 🔥 HOVER LINE ANIMATION */
+
 .feature-card::after {
   content: "";
   position: absolute;
@@ -97,7 +97,7 @@
   width: 100%;
 }
 
-/* 🔥 OPTIONAL HOVER EFFECT */
+
 .feature-card:hover {
   border-color: #222;
 }

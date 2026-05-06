@@ -1,4 +1,4 @@
-/* BACKGROUND */
+
 .auth-page-container {
   min-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-/* MATCH HOME PAGE GLOW EFFECT */
+
 .auth-page-container::after {
   content: "";
   position: absolute;
@@ -32,18 +32,18 @@
   z-index: 1;
 }
 
-/* CARD */
+
 .auth-box {
   width: 460px;
   padding: 40px;
   border-radius: 16px;
 
-  /* 🔥 solid black card */
+
   background: #000000;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  /* Added subtle purple shade */
+
   box-shadow:
     0 0 60px rgba(168, 85, 247, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -51,7 +51,7 @@
   color: #f1f5f9;
 }
 
-/* LOGO */
+
 .logo-row {
   display: flex;
   justify-content: flex-start;
@@ -66,7 +66,7 @@
   filter: brightness(1.2) contrast(1.1)
 }
 
-/* HEADING */
+
 h1 {
   font-size: 24px;
   margin-bottom: 6px;
@@ -81,7 +81,7 @@ h1 {
   text-align: center;
 }
 
-/* GITHUB BUTTON */
+
 .github-btn {
   width: 100%;
   padding: 13px;
@@ -106,7 +106,7 @@ h1 {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* DIVIDER */
+
 .divider {
   margin: 20px 0;
   display: flex;
@@ -131,7 +131,7 @@ h1 {
   margin-left: 10px;
 }
 
-/* INPUT BOX */
+
 .input-box {
   position: relative;
   width: 87.5%;
@@ -157,7 +157,7 @@ h1 {
   background: #0d0d0d;
 }
 
-/* INPUT ICON */
+
 .input-icon {
   position: absolute;
   top: 50%;
@@ -167,7 +167,7 @@ h1 {
   font-size: 16px;
 }
 
-/* BUTTON */
+
 .primary-btn {
   width: 100%;
   padding: 14px;
@@ -190,7 +190,7 @@ h1 {
   box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
 }
 
-/* SWITCH */
+
 .switch {
   text-align: center;
   margin-top: 16px;
