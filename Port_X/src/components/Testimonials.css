@@ -35,7 +35,6 @@
 /* hover effect */
 .card:hover {
   border-color: #ec4899;
-  transform: translateY(-5px);
 }
 
 /* quote icon */

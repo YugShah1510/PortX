@@ -15,7 +15,9 @@ const Navbar = () => {
         <Link to="/login">Log in</Link>
       </div>
 
-      <button className="preview-btn">Try Preview</button>
+      <Link to="/templates">
+        <button className="preview-btn">Explore</button>
+      </Link>
     </nav>
   );
 };

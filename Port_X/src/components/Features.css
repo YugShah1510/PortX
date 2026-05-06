@@ -99,7 +99,6 @@
 
 /* 🔥 OPTIONAL HOVER EFFECT */
 .feature-card:hover {
-  transform: translateY(-4px);
   border-color: #222;
 }
 

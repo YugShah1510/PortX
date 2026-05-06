@@ -13,6 +13,7 @@ const templates = [
         image:
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop",
         desc: "A clean, whitespace-heavy portfolio for full-stack engineers.",
+        previewUrl: "https://cyberpunk-luxury-portfolio.vercel.app/",
     },
 
     {
@@ -23,6 +24,7 @@ const templates = [
         image:
             "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
         desc: "Command-line inspired portfolio with hacker aesthetics.",
+        previewUrl: "https://3000-98b0c760-481e-4c99-b8b1-387ec150bcbb.orchids.cloud/?_cb=1778085790002",
     },
 
     {
@@ -33,6 +35,7 @@ const templates = [
         image:
             "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop",
         desc: "Modern bento-box portfolio layout with beautiful showcases.",
+        previewUrl: "https://3001-bbb0f790-8f63-44bd-bc78-3380c55c5997.orchids.cloud/?_cb=1778088036834",
     },
 
     {
@@ -83,7 +86,7 @@ export default function Template() {
                         <Link to="/login">Log in</Link>
                     </nav>
 
-                    <button className="preview-btn">Try Preview</button>
+                    <button className="preview-btn">Explore</button>
                 </div>
             </header>
 
@@ -135,11 +138,16 @@ export default function Template() {
                             <p>{item.desc}</p>
 
                             <div className="card-buttons">
-                                <button className="preview">Preview</button>
+                                <button
+                                    className="preview"
+                                    onClick={() => item.previewUrl && window.open(item.previewUrl, "_blank")}
+                                >
+                                    Preview
+                                </button>
                                 <button className="zip">.ZIP</button>
                             </div>
 
-                            <a href="/">OPEN FULL PREVIEW ↗</a>
+
                         </div>
                     </div>
                 ))}

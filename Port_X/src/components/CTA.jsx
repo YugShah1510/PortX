@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CTA.css";
 
 const CTA = () => {
@@ -14,9 +15,11 @@ const CTA = () => {
           Pick a template, drop in your details, and download the source. Free forever.
         </p>
 
-        <button className="cta-btn">
-          Browse Templates →
-        </button>
+        <Link to="/templates">
+          <button className="cta-btn">
+            Browse Templates →
+          </button>
+        </Link>
 
       </div>
     </section>
