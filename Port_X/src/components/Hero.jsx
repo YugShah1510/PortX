@@ -15,13 +15,13 @@ const Hero = () => {
 
       <div className="buttons">
         <button className="hero-primary-btn">Browse Templates →</button>
-        <button className="hero-secondary-btn">▶ Try Live Preview</button>
+        <button className="hero-secondary-btn">▶️ Try Live Preview</button>
       </div>
 
       <div className="features">
-        <span>• Instant ZIP download</span>
-        <span>• No signup required</span>
-        <span>• Production-ready code</span>
+        <span>Instant ZIP download</span>
+        <span>No signup required</span>
+        <span>Production-ready code</span>
       </div>
     </section>
   );

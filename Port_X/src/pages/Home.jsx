@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import TechBar from "../components/Techbar";
 import Features from "../components/Features";
@@ -8,12 +9,14 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <Hero />
-      <TechBar /> 
-      <Features/>
+      <TechBar />
+      <Features />
       <Testimonials />
-      <CTA/>
-      <Footer/>
+      <CTA />
+      <Footer />
+
     </div>
   );
 };
