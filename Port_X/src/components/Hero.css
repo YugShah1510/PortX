@@ -1,6 +1,6 @@
 .hero {
   padding: 100px 80px;
-  max-width: 1100px;
+  max-width: 100%;
   position: relative;
 }
 
@@ -21,6 +21,7 @@
   line-height: 1.1;
   font-weight: 700;
   letter-spacing: -1px;
+  text-align: left;
 }
 
 /* Gradient text */
@@ -53,13 +54,15 @@
   gap: 20px;
   position: relative;
 }
+
 .buttons::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
 
-  width: 215px; /* 🔥 match your button width manually */
+  width: 215px;
+  /* 🔥 match your button width manually */
   height: 100%;
 
   background: linear-gradient(to right, #7c3aed, #ec4899);
@@ -92,6 +95,7 @@
   font-size: 15px;
   cursor: pointer;
 }
+
 .buttons::before {
   box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
 }
@@ -114,7 +118,7 @@
   top: 50px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(168,85,247,0.4), transparent 70%);
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.4), transparent 70%);
   filter: blur(100px);
   z-index: -1;
 }

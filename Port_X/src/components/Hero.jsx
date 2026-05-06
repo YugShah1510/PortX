@@ -3,13 +3,9 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <section className="hero">
-      
 
-      <h1>
-        Templates that<br />
-        that <span className="gradient-text"> look like you hired</span> <br />
-        <span className="gradient-text-2">a developer.</span>
-      </h1>
+
+      <h1>Templates that<br /><span className="gradient-text">look like you</span><br /><span className="gradient-text">hired</span> <span className="gradient-text-2">a developer.</span></h1>
 
       <p>
         Browse a curated set of premium portfolios. Drop in your own bio and
