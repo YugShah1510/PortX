@@ -9,7 +9,7 @@ const templates = [
         id: 1,
         title: "Minimalist Dev",
         tags: ["BEGINNER", "HTML/CSS"],
-        rating: "4.9",
+        rating: "4.4",
         image:
             "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop",
         desc: "A clean, whitespace-heavy portfolio for full-stack engineers.",
