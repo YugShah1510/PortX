@@ -5,7 +5,7 @@ const TechBar = () => {
     <div className="tech-wrapper">
       <div className="tech-track">
 
-        <div className="tech-content">
+        <div className="tech-contnt">
           <span>◆ SVELTEKIT</span>
           <span>◆ REACT</span>
           <span>◆ NEXT.JS</span>
