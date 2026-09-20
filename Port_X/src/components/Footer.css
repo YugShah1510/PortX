@@ -64,7 +64,7 @@
 .footer-social {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .footer-social h4 {
