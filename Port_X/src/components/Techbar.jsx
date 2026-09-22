@@ -7,7 +7,7 @@ const TechBar = () => {
 
         <div className="tech-content">
           <span>◆ SVELTEKIT</span>
-          
+          <span>◆ REACT</span>
           <span>◆ NEXT.JS</span>
           <span>◆ TAILWIND</span>
           <span>◆ ASTRO</span>
